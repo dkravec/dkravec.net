@@ -1,0 +1,12 @@
+{ 
+    "name": "dkravec", 
+    "short_name": "dkravec", 
+    "start_url": "index.html", 
+    "display": "standalone", 
+    "theme_color" : "#1c1c1e",
+    "icons": [{ 
+      "src": "/apple-touch-icon.png", 
+      "sizes": "1080x1080", 
+      "type": "image/png" 
+    }] 
+} 
