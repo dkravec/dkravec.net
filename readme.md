@@ -5,3 +5,9 @@ Created by Daniel Kravec, on May 15, 2023
 
 ### 1.0 (1.2023.05.15)
 - This is the inital commit with very basic details.
+
+### 1.0.1 (2.2023.05.15)
+- Added favicon.
+- Added apple-touch-icon.
+- Added more links to the page.
+- Added basic styling to the page.

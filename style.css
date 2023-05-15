@@ -1,0 +1,120 @@
+/* 
+Why are you looking at my source code for css??? 
+Anyways dm me on twitter @dankravec if you see this
+Have a nice day :)
+*/
+:root {
+    /* MAIN ROOT ONLY */
+    font-size: 16px;
+    --transition-speed: 250ms ease;
+    /* Main Backgrounds (x1) */
+    --main-body-color: rgb(28, 28, 30);     
+    /* Button Backgrounds (x2) */
+    --main-button-color: rgb(44, 44, 46);
+    --main-nav-color: rgb(44, 44, 46);
+    --hover-button-color: rgb(60,60,60);
+    --hover-nav-color: rgb(60,60,60);
+    /* shadow Colors (x3) */
+    --main-shadow-color: 0px 0px 15px rgba(17, 17, 18, 0.9);
+    --navbar-box-shadow:  
+        rgb(0, 0, 0) 12px 12px 15px,
+        rgb(0, 0, 0) 12px 12px -15px, 
+        rgb(0, 0, 0) 12px -12px 15px, 
+        rgb(0, 0, 0) 12px -12px -15px;
+    --nav-link-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.56) ;
+    /* Border Colors (x2) */
+    --main-border-color:rgb(107, 107, 107);
+    --hover-border-color: rgba(39, 113, 240, 0.9);
+    /* Border Divider (x2) */
+    --main-divider: 2px solid #bbb;
+    /* Text Colors (x6) */
+    --hover-box-text-color: rgb(209, 209, 209);
+    --main-h1-color: #e6e6e6; 
+    --main-h2-color: #d4d4d4; 
+    --main-a-color: rgb(218, 218, 218); 
+    --main-p-color: rgb(201, 201, 201); 
+    --fa-secondary-colour:  rgb(184, 184, 184);;
+    /* OLD ROOTS (x3)
+    --main-nav-color: #2e2e2e; 
+    --menu-hover-color: rgb(87, 87, 87);
+    --nav-border-color: 1px solid rgba(148, 148, 148, 0.9);
+    --sidebar-divider: 2px solid rgb(58, 58, 58);
+    */
+}
+/*Change view*/
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: "Helvetica neue", sans-serif;
+    scroll-behavior: smooth;
+}
+html,body {
+    margin: 0;
+    width: 100%;
+}
+.header {
+    margin-top: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.description {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+body {
+    background-color: var(--main-body-color);
+}
+h1 {
+    color: var(--main-h1-color);
+}
+p {
+    color: var(--main-p-color);
+}
+a {
+    color: var(--main-a-color);
+}
+
+.buttonDiv {
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    align-items: center;
+    float: center;
+}
+.buttonDiv h1 {
+    color:var(--main-h1-color);
+    font-size: 30px;
+    text-align: left;
+    align-items: left;
+    float: left;
+    padding: 0px;
+}
+.buttonDiv p {
+    color: var(--main-p-color);
+    font-size: 15px;
+    text-align: left;
+    align-items: left;
+    float: left;
+    width: 100%;
+}
+.buttonDiv a {
+    background-color:  var(--main-button-color);
+    border: 2px solid var(--main-border-color);
+    margin: 20px;
+    text-decoration: none;
+    color: var(--main-a-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;  
+    box-shadow: 
+        var(--main-shadow-color);
+    transition: transform 400ms, border-color 400ms, background-color 400ms;
+}
+hr.rounded {
+    border: var(--main-divider);
+    border-radius: 2px;
+    margin: 20px; 
+}
