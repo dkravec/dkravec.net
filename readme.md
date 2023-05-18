@@ -14,3 +14,7 @@ Created by Daniel Kravec, on May 15, 2023
 
 ### 1.0.2 (3.2023.05.15)
 - Added manifest.json for support of better bookmarking.
+
+### 1.0.3 (4.2023.05.18)
+- Added plain navigation bar.
+- Added favicon to homepage as header image.

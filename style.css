@@ -55,9 +55,15 @@ html,body {
     width: 100%;
 }
 .header {
+    padding-top: 30px;
     margin-top: 20px;
     padding-right: 5%;
     padding-left: 5%;
+}
+.header img {
+    align-items: center;
+    padding-left: 25%;
+    width: 50%;
 }
 .description {
     padding-right: 5%;
@@ -117,4 +123,28 @@ hr.rounded {
     border: var(--main-divider);
     border-radius: 2px;
     margin: 20px; 
+}
+
+/* nav bar */
+.nav-bar-basic {
+    z-index: 15;
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border-bottom: var(--hover-border-color);
+    background-color: var(--main-nav-color);
+    overflow-x: hidden;
+    width: 100%;
+    box-shadow: 
+        var(--main-shadow-color);
+}
+.nav-bar-basic p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: var( --hover-border-color);
+    display: block;
+    text-align: left;
+    line-height: 25px;
+    user-select: none;
 }
