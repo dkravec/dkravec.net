@@ -18,3 +18,6 @@ Created by Daniel Kravec, on May 15, 2023
 ### 1.0.3 (4.2023.05.18)
 - Added plain navigation bar.
 - Added favicon to homepage as header image.
+
+### 1.0.4 (5.2023.05.29)
+- Added interact's github page to main page.
