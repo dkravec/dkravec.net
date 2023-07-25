@@ -21,3 +21,7 @@ Created by Daniel Kravec, on May 15, 2023
 
 ### 1.0.4 (5.2023.05.29)
 - Added interact's github page to main page.
+
+### 1.0.5 (6.2023.07.24)
+- Added Nova Production discord widget.
+- Made logo slightly smaller.
