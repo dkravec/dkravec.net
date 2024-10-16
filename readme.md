@@ -25,3 +25,7 @@ Created by Daniel Kravec, on May 15, 2023
 ### 1.0.5 (6.2023.07.24)
 - Added Nova Production discord widget.
 - Made logo slightly smaller.
+
+### 2.0 (7.2024.10.15)
+- Added images to home page, different tests for styling
+- Worked on images.css

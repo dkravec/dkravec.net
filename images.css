@@ -1,0 +1,121 @@
+/* Basic gallery setup */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.row, .row-type-1, .row-type-2 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row .col, .row-type-2 .col {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+img {
+    align-items: center;
+}
+.landscape, .portrait {
+    flex-grow: 1;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* row-type-1
+P-L or L-P
+*/
+.row-type-1 .landscape {
+    width: 65%; 
+}
+.row-type-1 .portrait {
+    width: 30%;
+}
+/* row-type-2
+[L_L] P-P
+*/
+/* .row-type-2 .col :where .landscape{
+    width: 35%; 
+} */
+.row-type-2 .col {
+    width: 30%;
+}
+.row-type-2 .col-large {
+    width: 65%;
+}
+.row-type-2 .col .landscape {
+    width: 100%; 
+}
+.row-type-2 .col .portrait {
+    width: 100%;
+}
+.row-type-2 .landscape {
+    width: 30%; 
+}
+.row-type-2 .col-large .landscape {
+    width: 100%; 
+}
+
+.row-type-2 .portrait {
+    width: 30%;
+}
+
+
+
+.landscape {
+    width: 65%; 
+    /* max-height: 30%; */
+}
+.portrait {
+    width: 30%;
+    /* max-width: 65%; */
+}
+.landscape.main {
+    width: 30%;
+}
+.portrait.main {
+    width: 60%;
+}
+.landscape.sub {
+    width: 30%;
+}
+
+
+.landscape.type1 {
+
+}
+.portrait.type1 {
+    
+}
+
+
+/*
+
+HOW TO DO?
+    mains / subs?
+    type within image element?
+    type within row?
+*/
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .row, .row-type-1, .row-type-2 {
+      flex-direction: column;
+    }
+  
+    .landscape, .portrait,
+    .row-type-1 .landscape, .row-type-1 .portrait 
+    .row-type-2 .landscape, .row-type-2 .portrait {
+      width: 100%;
+      max-height: 200px;
+    }
+}
+  
