@@ -1,0 +1,5 @@
+# robots.txt for dkravec.net
+User-agent: *
+Allow: /
+
+Sitemap: https://dkravec.net/sitemap.xml

@@ -1,0 +1,31 @@
+{
+  "research": [
+    {
+      "id": "serverless-inventory",
+      "title": "Serverless Inventory Architecture",
+      "summary": "Designing scalable inventory management systems using AWS Lambda, DynamoDB, and event-driven patterns.",
+      "file": "/assets/research/serverless-inventory.pdf",
+      "url": null,
+      "date": "2025-08-15",
+      "tags": ["AWS", "Serverless", "Architecture"]
+    },
+    {
+      "id": "banking-threat-model",
+      "title": "Secure Banking App Threat Model",
+      "summary": "Comprehensive threat modeling and security analysis for mobile banking applications.",
+      "file": "/assets/research/banking-threat-model.pdf",
+      "url": null,
+      "date": "2025-06-20",
+      "tags": ["Security", "Mobile", "Threat Modeling"]
+    },
+    {
+      "id": "health-analytics",
+      "title": "Health Data Analytics Study",
+      "summary": "Research on processing and analyzing health metrics for personalized insights.",
+      "file": "/assets/research/health-analytics.pdf",
+      "url": null,
+      "date": "2025-04-10",
+      "tags": ["Health", "Analytics", "Data Science"]
+    }
+  ]
+}

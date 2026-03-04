@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": ["Swift", "JavaScript", "TypeScript", "Python", "SQL", "C++"]
+    },
+    {
+      "name": "Frontend",
+      "skills": ["React", "Angular", "HTML", "CSS", "Svelte"]
+    },
+    {
+      "name": "Backend",
+      "skills": ["Node.js", "Express", "REST APIs", "GraphQL"]
+    },
+    {
+      "name": "Mobile",
+      "skills": ["iOS", "SwiftUI", "UIKit", "HealthKit", "Core Data"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": ["AWS", "Docker", "GitHub Actions", "CI/CD"]
+    },
+    {
+    "name": "Systems & Infrastructure",
+    "skills": ["Linux", "Ubuntu", "Nginx", "SSH", "Bash"]
+    },
+    {
+      "name": "Databases",
+      "skills": ["MongoDB", "PostgreSQL", "DynamoDB", "Redis"]
+    }
+  ]
+}

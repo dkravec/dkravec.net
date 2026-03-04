@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "projects": {
+      "show": true,
+      "title": "Projects"
+    },
+    "writing": {
+      "show": false,
+      "title": "Writing & Research"
+    },
+    "photography": {
+      "show": false,
+      "title": "Photography"
+    },
+    "skills": {
+      "show": true,
+      "title": "Skills"
+    },
+    "about": {
+      "show": true,
+      "title": "About",
+      "showResume": false
+    },
+    "contact": {
+      "show": true,
+      "title": "Contact"
+    }
+  }
+}

@@ -1,166 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>dkravec</title>
-        <link rel="icon" type="image/png" href="/img/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <link rel="stylesheet" type="text/css" href="/images.css">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta property="og:image" content="/apple-touch-icon.png">
-        <meta property="og:title" content="dkravec">
-	    <meta property="og:description" content="Daniel Kravec's website for random stuff."/>
-	    <meta property="og:url" content="https://www.dkravec.net"/>
-	    <meta property="og:type" content="website"/>
-    	<meta property="og:site_name" content="dkravec"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Daniel Kravec's website for random stuff.">
-        <meta name="twitter:title" content="dkravec">
-        <meta property="twitter:image" content="https://dkravec.net/apple-touch-icon.png">
-        <meta property="twitter:description" content="Daniel Kravec's website for random stuff."/>
-    </head>
-    <body>
-        <div class="nav-bar-basic">
-            <p>dkravec.net</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kravec - Software Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Daniel Kravec is a software developer building data-driven applications, AI-assisted tools, and experimental platforms. Creator of Interact, GymTracker, and HearTracker.">
+    <meta name="keywords" content="Daniel Kravec, software developer, iOS developer, web developer, Swift, Node.js, React, Nova Productions">
+    <meta name="author" content="Daniel Kravec">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dkravec.net">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f0f10">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dkravec.net">
+    <meta property="og:title" content="Daniel Kravec - Software Developer">
+    <meta property="og:description" content="Software developer building apps, platforms, and experiments. Creator of Interact, GymTracker, and HearTracker.">
+    <meta property="og:image" content="https://dkravec.net/apple-touch-icon.png">
+    <meta property="og:site_name" content="Daniel Kravec">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@dankravec">
+    <meta name="twitter:creator" content="@dankravec">
+    <meta name="twitter:title" content="Daniel Kravec - Software Developer">
+    <meta name="twitter:description" content="Software developer building apps, platforms, and experiments.">
+    <meta name="twitter:image" content="https://dkravec.net/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daniel Kravec",
+        "url": "https://dkravec.net",
+        "image": "https://dkravec.net/apple-touch-icon.png",
+        "jobTitle": "Software Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Nova Productions",
+            "url": "https://novapro.net"
+        },
+        "sameAs": [
+            "https://github.com/dkravec",
+            "https://twitter.com/dankravec",
+            "https://novapro.net"
+        ],
+        "knowsAbout": ["Software Development", "iOS Development", "Web Development", "Swift", "Node.js", "React"]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">dkravec</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#writing">Writing</a>
+                <a href="#photography">Photography</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="header">
-            <h1>Welcome to dkravec.net!</h1>
-            <img src="./img/favicon.ico">
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Daniel Kravec</h1>
+            <p class="hero-subtitle">Software developer building apps, platforms, and experiments.</p>
+            <p class="hero-focus">Creator of Interact, GymTracker, and HearTracker.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://novapro.net" target="_blank" rel="noopener" class="btn btn-secondary">Nova Productions</a>
+                <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+            </div>
         </div>
-        <hr class="rounded">
-        <div class="description"> 
-            <p>This website is still under construction. Please stick around for more updates.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Loaded from /json/projects.json -->
+            </div>
         </div>
-        <hr class="rounded">
-        <div>
-            <div class="gallery">
-                <p>row</p>
-                <div class="row">
-                    <img class="landscape main" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="landscape main" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <p>row type1 image</p>
-                <div class="row">
-                    <img class="landscape type1" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="landscape type1" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="portrait type1" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <p>row-type-1 (landscape, portrait)</p>
-                <div class="row-type-1">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <p>row-type-2 (1 landscape, 2 portrait)</p>
-                <div class="row-type-2">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <p>row-type-2 (col-2landscape, 2 portrait)</p>
-                <div class="row-type-2">
-                    <div class="col">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <p>row-type-2 col portrait, col 2 landscape, col 2 landscape</p>
-                <div class="row-type-2">
-                    <div class="col">
-                        <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    </div>
-                    <div class="col">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                    <div class="col">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                </div>
-                <p>row-type-2 col portrait, row 1landscape</p>
-                <div class="row-type-2">
-                    <div class="col">
-                        <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    </div>
-                    <div class="col-large">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                </div>
-                <div class="row-type-1">
-                    <div class="col">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                    <div class="col">
-                        <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    </div>
-                    <div class="col">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                        <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    </div>
-                </div>
-                <div class="row">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <div class="row">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                </div>
-                  <div class="row">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <div class="row">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                    <img class="portrait" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Tall_Building_Photo_Captured_in_Portrait_Orientation.jpg" alt="Portrait 1">
-                </div>
-                <div class="row">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                    <img class="landscape" src="https://cdn.shopify.com/s/files/1/3026/6974/files/Stunning_Sunset_Tree_Landscape_Photo.jpg" alt="Landscape 1">
-                </div>
-              </div>
+    </section>
+
+    <!-- Writing / Research Section -->
+    <section id="writing" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Writing & Research</h2>
+            <div class="writing-list" id="writing-list">
+                <!-- Loaded from /json/research.json -->
             </div>
-        <div class="my-links">
-            <div class="buttonDiv">
-                <p>Check out my main page at novapro.net</p>
-                <a href="https://novapro.net" target="_blank">Nova Productions</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>My current main project is Interact, check out the site at interact.novapro.net!</p>
-                <a href="https://interact.novapro.net" target="_blank">Interact</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>Interact's GitHub page, where you can see all Interact's releated open source projects, @social-novapro</p>
-                <a href="https://github.com/social-novapro" target="_blank">Interact GitHub</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>My GitHub page, where you can see all my projects, @dkravec</p>
-                <a href="https://github.com/dkravec" target="_blank">GitHub</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>My Twitter page, where you can see my latest tweets, @dankravec</p>
-                <a href="https://twitter.com/dankravec" target="_blank">Twitter</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>My Instagram page, where you can see all my photos I post, @dkravec</p>
-                <a href="https://instagram.com/dkravec" target="_blank">Instagram</a>
-            </div>
-            <hr class="rounded">
-            <div class="buttonDiv">
-                <p>Nova Productions Discord Server</p>
-                <iframe src="https://discord.com/widget?id=536719500972785665&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </div>
-            <hr class="rounded">
         </div>
-    </body>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Photography</h2>
+            <div class="photo-grid" id="photo-grid">
+                <!-- Loaded from /json/photos.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Loaded from /json/skills.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>Daniel Kravec is a software developer focused on building data-driven applications, AI-assisted tools, and experimental platforms.</p>
+                <p>Founder of <a href="https://novapro.net" target="_blank" rel="noopener">Nova Productions</a>, where I create and ship products that solve real problems.</p>
+                <a href="/assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary resume-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:daniel@dkravec.net" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://novapro.net" target="_blank" rel="noopener" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>Nova Productions</span>
+                </a>
+                <a href="https://interact.novapro.net" target="_blank" rel="noopener" class="contact-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Interact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Daniel Kravec. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox for photos -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="" class="lightbox-img">
+    </div>
+
+    <script src="/script.js"></script>
+</body>
 </html>

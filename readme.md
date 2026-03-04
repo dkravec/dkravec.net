@@ -29,3 +29,9 @@ Created by Daniel Kravec, on May 15, 2023
 ### 2.0 (7.2024.10.15)
 - Added images to home page, different tests for styling
 - Worked on images.css
+
+### 2.0 (8.2026.03.04)
+- Redesigned homepage with new sections and styling.
+- Added new projects and updated project details.
+- Added new resume and updated about section.
+- Added future photos, resume, and research sections (hidden).

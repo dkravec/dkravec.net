@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": "interact",
+      "title": "Interact",
+      "description": "Experimental social platform exploring new feed algorithms.",
+      "image": "/assets/projects/interact.png",
+      "url": "https://interact.novapro.net",
+      "linkText": "Visit site",
+      "github": "https://github.com/social-novapro",
+      "tags": ["Web", "Node.js", "AI"]
+    },
+    {
+      "id": "gymtracker",
+      "title": "GymTracker",
+      "description": "Workout tracking platform with analytics and Apple Health integration.",
+      "image": "/assets/projects/gymtracker.jpg",
+      "url": "https://trackerr.ca",
+      "linkText": "Visit site",
+      "github": "https://github.com/gymtracker.png",
+      "tags": ["iOS", "Swift", "HealthKit"]
+    },
+    {
+      "id": "heartracker",
+      "title": "HearTracker",
+      "description": "Hearing aid battery tracking and device management app.",
+      "image": "/assets/projects/heartracker.png",
+      "url": "https://hear.trackerr.ca",
+      "linkText": "Visit site",
+      "github": null,
+      "tags": ["iOS", "Swift"]
+    },
+    {
+      "id": "astra",
+      "title": "Astra",
+      "description": "Discord bot experiment.",
+      "image": "/assets/projects/astra.png",
+      "url": "https://novapro.net/astra",
+      "linkText": "Learn more",
+      "github": null,
+      "tags": ["Node.js", "Discord", "API"]
+    }
+  ]
+}

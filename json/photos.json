@@ -1,0 +1,40 @@
+{
+  "photos": [
+    {
+      "id": "photo-1",
+      "src": "/assets/photos/photo-1.jpg",
+      "alt": "Mountain landscape",
+      "caption": null
+    },
+    {
+      "id": "photo-2",
+      "src": "/assets/photos/photo-2.jpg",
+      "alt": "City skyline",
+      "caption": null
+    },
+    {
+      "id": "photo-3",
+      "src": "/assets/photos/photo-3.jpg",
+      "alt": "Ocean waves",
+      "caption": null
+    },
+    {
+      "id": "photo-4",
+      "src": "/assets/photos/photo-4.jpg",
+      "alt": "Lake reflection",
+      "caption": null
+    },
+    {
+      "id": "photo-5",
+      "src": "/assets/photos/photo-5.jpg",
+      "alt": "Forest path",
+      "caption": null
+    },
+    {
+      "id": "photo-6",
+      "src": "/assets/photos/photo-6.jpg",
+      "alt": "Waterfall",
+      "caption": null
+    }
+  ]
+}
