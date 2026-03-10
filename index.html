@@ -79,23 +79,50 @@
                 <a href="#writing">Writing</a>
                 <a href="#photography">Photography</a>
                 <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
                 <a href="#about">About</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Daniel Kravec</h1>
-            <p class="hero-subtitle">Software developer building apps, platforms, and experiments.</p>
-            <p class="hero-focus">Creator of Interact, GymTracker, and HearTracker.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="https://novapro.net" target="_blank" rel="noopener" class="btn btn-secondary">Nova Productions</a>
-                <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+        <div class="hero-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-header">
+                <div class="hero-avatar">
+                    <div class="avatar-circle">
+                        <img src="/img/dankravec.jpeg" alt="Daniel Kravec" class="avatar-image">
+                    </div>
+                    <div class="avatar-decoration avatar-top"></div>
+                    <div class="avatar-decoration avatar-bottom"></div>
+                </div>
+                <h1 class="hero-title">Daniel Kravec</h1>
             </div>
+            <p class="hero-subtitle">Software developer building apps, platforms, and experiments.</p>
+            <p class="hero-focus">Creator of <span class="highlight">Interact</span>, <span class="highlight">GymTracker</span>, and <span class="highlight">HearTracker</span>.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M2 8h12M9 5l3 3-3 3"/>
+                    </svg>
+                </a>
+                <a href="https://novapro.net" target="_blank" rel="noopener" class="btn btn-secondary">Nova Productions</a>
+                <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator desktop-only">
+            <div class="scroll-text">Scroll down</div>
+            <svg class="scroll-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 3v14M3 11l7 7 7-7"/>
+            </svg>
         </div>
     </section>
 
@@ -139,67 +166,89 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="section section-hidden">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-scroll" id="education-scroll">
+                <!-- Loaded from /json/education.json -->
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="section section-hidden">
+    <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About</h2>
             <div class="about-content">
                 <p>Daniel Kravec is a software developer focused on building data-driven applications, AI-assisted tools, and experimental platforms.</p>
                 <p>Founder of <a href="https://novapro.net" target="_blank" rel="noopener">Nova Productions</a>, where I create and ship products that solve real problems.</p>
-                <a href="/assets/resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary resume-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download Resume
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-hidden">
+    <!-- Footer Section -->
+    <section id="footer" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:daniel@dkravec.net" class="contact-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>Email</span>
-                </a>
-                <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="contact-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://novapro.net" target="_blank" rel="noopener" class="contact-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                    <span>Nova Productions</span>
-                </a>
-                <a href="https://interact.novapro.net" target="_blank" rel="noopener" class="contact-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                    </svg>
-                    <span>Interact</span>
-                </a>
+            <div class="contact-content">
+                <!-- Left: Name & CTA -->
+                <div class="footer-section footer-brand">
+                    <h3 class="footer-brand-name">Daniel Kravec</h3>
+                    <p class="footer-tagline">Building digital experiences and exploring new technologies.</p>
+                    <div class="footer-brand-links">
+                        <a href="https://novapro.net" target="_blank" rel="noopener" class="footer-brand-link">Nova Productions</a>
+                        <a href="https://dkravec.net" class="footer-brand-link">dkravec.net</a>
+                    </div>
+                </div>
+
+                <!-- Middle: Projects -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Projects</h4>
+                    <nav class="footer-links" id="footer-projects">
+                        <!-- Loaded from /json/projects.json -->
+                    </nav>
+                </div>
+
+                <!-- Right: Contact -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Me</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:daniel@dkravec.net" class="footer-contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/dkravec" target="_blank" rel="noopener" class="footer-contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://twitter.com/dankravec" target="_blank" rel="noopener" class="footer-contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 002.856-9.976c-1.674.975-3.505 1.602-5.447 1.965 1.953-1.177 3.438-3.051 4.138-5.281-1.826 1.085-3.850 1.873-5.994 2.292-1.725-1.837-4.185-2.989-6.896-2.989-5.22 0-9.436 4.217-9.436 9.438 0 .74.088 1.46.259 2.158-7.843-.391-14.8-4.15-19.46-9.868-.81 1.389-1.277 3.009-1.277 4.738 0 3.273 1.664 6.158 4.186 7.857-.628-.02-1.218-.193-1.735-.48v.118c0 4.573 3.25 8.387 7.57 9.255-.79.216-1.623.334-2.484.334-.608 0-1.2-.053-1.782-.162 1.203 3.76 4.694 6.494 8.819 6.572-3.227 2.53-7.3 4.037-11.725 4.037-.761 0-1.51-.046-2.248-.137C4.161 21.005 7.96 22.5 12.255 22.5c9.306 0 14.376-7.717 14.376-14.405 0-.219-.005-.437-.015-.653.987-.716 1.842-1.61 2.52-2.632l.023-.037z"></path>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://novapro.net" target="_blank" rel="noopener" class="footer-contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            <span>Nova</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-bottom">
+                <p>&copy; 2026 Daniel Kravec. All rights reserved.</p>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Daniel Kravec. All rights reserved.</p>
-        </div>
-    </footer>
 
     <!-- Lightbox for photos -->
     <div class="lightbox" id="lightbox">

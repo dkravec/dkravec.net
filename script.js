@@ -66,6 +66,22 @@ async function loadProjects() {
     }
 }
 
+// Load footer projects from JSON
+async function loadFooterProjects() {
+    try {
+        const res = await fetch('/json/projects.json');
+        const data = await res.json();
+        const container = document.getElementById('footer-projects');
+        
+        container.innerHTML = data.projects.map(project => {
+            const linkUrl = project.url || '#';
+            return `<a href="${linkUrl}" target="_blank" rel="noopener" class="footer-link">${project.title}</a>`;
+        }).join('');
+    } catch (err) {
+        console.error('Failed to load footer projects:', err);
+    }
+}
+
 // Load research from JSON
 async function loadResearch() {
     try {
@@ -189,6 +205,34 @@ async function loadSkills() {
     }
 }
 
+// Load education from JSON
+async function loadEducation() {
+    try {
+        const res = await fetch('/json/education.json');
+        const data = await res.json();
+        const scroll = document.getElementById('education-scroll');
+        
+        scroll.innerHTML = data.education.map(edu => {
+            const graduatedDisplay = edu.expected ? `${edu.graduated} (expected)` : edu.graduated;
+            const linkHtml = edu.url ? `<a href="${edu.url}" target="_blank" rel="noopener" class="education-link">Learn more →</a>` : '';
+            
+            return `
+                <article class="education-card">
+                    <div class="education-card-header">
+                        <h3 class="education-title">${edu.title}</h3>
+                        <p class="education-school">${edu.school}</p>
+                        ${edu.location ? `<p class="education-location">${edu.location}</p>` : ''}
+                    </div>
+                    <div class="education-dates">${edu.enrolled} – ${graduatedDisplay}</div>
+                    ${linkHtml}
+                </article>
+            `;
+        }).join('');
+    } catch (err) {
+        console.error('Failed to load education:', err);
+    }
+}
+
 // Load config and show/hide sections
 async function loadConfig() {
     try {
@@ -196,10 +240,20 @@ async function loadConfig() {
         const data = await res.json();
         
         // Define section order for consistent iteration
-        const sectionOrder = ['projects', 'writing', 'photography', 'skills', 'about', 'contact'];
+        const sectionOrder = ['projects', 'writing', 'photography', 'skills', 'education', 'about', 'footer'];
         
         // Show/hide each section based on config
         sectionOrder.forEach(sectionId => {
+            // Skip config processing for footer (always shown)
+            if (sectionId === 'footer') {
+                // Ensure footer element exists
+                const footer = document.getElementById(sectionId);
+                if (footer) {
+                    footer.classList.remove('section-hidden');
+                }
+                return;
+            }
+            
             const config = data.sections[sectionId];
             if (!config) return;
             
@@ -238,7 +292,7 @@ async function loadConfig() {
         
         // Apply alternating backgrounds to visible sections
         const visibleSections = sectionOrder
-            .filter(id => data.sections[id]?.show)
+            .filter(id => id === 'footer' || data.sections[id]?.show)
             .map(id => document.getElementById(id))
             .filter(Boolean);
         
@@ -263,7 +317,9 @@ async function loadConfig() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadConfig();
     loadProjects();
+    loadFooterProjects();
     loadResearch();
     loadPhotos();
     loadSkills();
+    loadEducation();
 });

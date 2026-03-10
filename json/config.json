@@ -16,14 +16,13 @@
       "show": true,
       "title": "Skills"
     },
+    "education": {
+      "show": true,
+      "title": "Education"
+    },
     "about": {
       "show": true,
-      "title": "About",
-      "showResume": false
-    },
-    "contact": {
-      "show": true,
-      "title": "Contact"
+      "title": "About"
     }
   }
 }

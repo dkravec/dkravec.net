@@ -1,0 +1,31 @@
+{
+  "education": [
+    {
+      "title": "Bachelor of Science (Honours) in Software Development",
+      "school": "Atlantic Technological University Sligo",
+      "location": "Sligo, Ireland",
+      "enrolled": "Sept 2025",
+      "graduated": "May 2026",
+      "expected": true,
+      "url": "https://www.atu.ie/courses/bachelor-of-science-honours-software-development-full-time"
+    },
+    {
+      "title": "Computer Engineering Technology - Computing Science",
+      "school": "Algonquin College",
+      "location": "Ottawa, Canada",
+      "enrolled": "Sept 2022",
+      "graduated": "Aug 2025",
+      "expected": false,
+      "url": "https://www.algonquincollege.com/sat/program/computer-engineering-technology-computing-science/"
+    },
+    {
+      "title": "High School Diploma",
+      "school": "Saint Lambert International High School",
+      "location": "Saint-Lambert, Canada",
+      "enrolled": "Sept 2017",
+      "graduated": "June 2022",
+      "expected": false,
+      "url": ""
+    }
+  ]
+}

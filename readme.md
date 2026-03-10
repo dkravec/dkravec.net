@@ -35,3 +35,8 @@ Created by Daniel Kravec, on May 15, 2023
 - Added new projects and updated project details.
 - Added new resume and updated about section.
 - Added future photos, resume, and research sections (hidden).
+
+### 2.0.1 (9.2026.03.10)
+- Added education section with current degree details.
+- Added new avatar image and styling to hero banner with scroll down header.
+- Added contact to footor and removed contact section.
